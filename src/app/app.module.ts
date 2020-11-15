@@ -3,16 +3,16 @@ import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
-import { SplashScreenComponent } from './components/splash-screen/splash-screen.component';
+import { CoreModule } from './core/core.module';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    SplashScreenComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
-    RouterModule
+    RouterModule.forRoot([]),
+    CoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]
