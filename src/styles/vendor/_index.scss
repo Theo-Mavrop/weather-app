@@ -1,0 +1,15 @@
+@import './font_awesome/fontawesome.scss';
+@import './font_awesome/solid.scss';
+
+
+.fa-sun {
+  &.header-icon {
+    font-size: 5rem;
+  }
+}
+
+.fa-bars {
+  &.header-icon {
+    font-size: 2rem;
+  }
+}
