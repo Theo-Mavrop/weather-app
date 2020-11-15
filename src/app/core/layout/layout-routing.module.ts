@@ -2,12 +2,23 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { PageNotFoundComponent } from '../components/page-not-found/page-not-found.component';
+import { LayoutComponent } from './layout.component';
+import { HomeComponent } from '../../features/home/home.component';
 
 
 const routes: Routes = [
   {
     path: '',
-    component: PageNotFoundComponent
+    redirectTo: 'home',
+    pathMatch: 'full'
+  },
+  {
+    path: '',
+    component: LayoutComponent,
+    children: [
+      { path: 'home', component: HomeComponent },
+      { path: '**', component: PageNotFoundComponent}
+    ]
   }
 ];
 
