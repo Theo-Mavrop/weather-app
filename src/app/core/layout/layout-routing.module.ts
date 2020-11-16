@@ -3,8 +3,6 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { PageNotFoundComponent } from '../components/page-not-found/page-not-found.component';
 import { LayoutComponent } from './layout.component';
-import { HomeComponent } from '../../features/home/home.component';
-
 
 const routes: Routes = [
   {
@@ -16,7 +14,10 @@ const routes: Routes = [
     path: '',
     component: LayoutComponent,
     children: [
-      { path: 'home', component: HomeComponent },
+      {
+        path: 'home',
+        loadChildren: () => import('../../features/home/home.module').then(m => m.HomeModule)
+      },
       { path: '**', component: PageNotFoundComponent}
     ]
   }

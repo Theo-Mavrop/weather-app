@@ -1,16 +1,16 @@
 @import '../../../../styles/abstracts/variables';
 
 .header {
-  background: $primary-color;
+  background: $primary-color-dark;
   color: $primary-header-color-text;
   display: flex;
   flex-flow: row wrap;
   align-items: center;
   justify-content: flex-start;
+  padding: 1rem 1.5rem;
 
   &_menu {
-    background: $primary-color-dark;
-    padding: 2.7rem;
+    color: $primary-color-light;
   }
 
   &_logo {
@@ -24,6 +24,6 @@
   &_title {
     font-family: $font_secondary;
     font-size: 3rem;
-    padding: 1rem;
+    padding-left: 1rem;
   }
 }
