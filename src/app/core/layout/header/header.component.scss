@@ -6,8 +6,8 @@
   display: flex;
   flex-flow: row wrap;
   align-items: center;
-  justify-content: flex-start;
-  padding: 1rem 1.5rem;
+  padding: 0 1.5rem;
+  height: 8rem;
 
   &_menu {
     color: $primary-color-light;

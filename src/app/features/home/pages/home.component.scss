@@ -2,4 +2,24 @@
 
 .home {
   background: $primary-color;
+  height: calc(100vh - 8rem);
+  color: $primary-header-color-text;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+
+  &_section {
+    width: 50%;
+    text-align: center;
+
+    &.result {
+      padding: 0 2rem;
+    }
+
+    &_title {
+      font-size: 8rem;
+      word-break: break-word;
+    }
+  }
 }
