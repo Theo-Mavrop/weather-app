@@ -2,13 +2,10 @@
 @import '../../../../../styles/abstracts/mixins';
 
 .searchBar {
-  display: flex;
-  justify-content: center;
 
   &_wrapper {
     position: relative;
-    height: 40px;
-    width: calc(100%/2);
+    height: 4rem;
   }
 
   &_textInput {
