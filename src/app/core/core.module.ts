@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { HttpClientModule } from '@angular/common/http';
 
 import { LayoutModule } from './layout/layout.module';
 import { SplashScreenComponent } from './components/splash-screen/splash-screen.component';
-
 
 
 @NgModule({
@@ -12,7 +12,8 @@ import { SplashScreenComponent } from './components/splash-screen/splash-screen.
   ],
   imports: [
     CommonModule,
-    LayoutModule
+    LayoutModule,
+    HttpClientModule
   ],
   exports: [
     SplashScreenComponent
