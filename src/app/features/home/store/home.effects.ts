@@ -7,7 +7,7 @@ import { map, switchMap } from 'rxjs/operators';
 import * as HomeActions from './home.actions';
 import * as fromApp from '../../../store/app.reducer';
 import { WeatherAPIConstants } from '../../../core/constants/weather-api.constants';
-import { environment } from '../../../../environments/environment.prod';
+import { environment } from '../../../../environments/environment';
 import { WeatherInfo } from '../../../core/models/weatherInfo.model';
 
 @Injectable()
