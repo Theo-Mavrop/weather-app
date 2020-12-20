@@ -3,8 +3,14 @@
     <button class="searchBar_locationIcon" (click)="getLocation()">
       <i class="fas fa-map-marker-alt"></i>
     </button>
-    <input type="text" class="searchBar_textInput" placeholder="Type City" />
-    <button class="searchBar_searchIcon">
+    <input
+      type="text"
+      class="searchBar_textInput"
+      placeholder="Type City"
+      [(ngModel)]="cityName"
+      (keyup.enter)="getWeather()"
+    />
+    <button class="searchBar_searchIcon" (click)="getWeather()">
       <i class="fas fa-search"></i>
     </button>
   </div>
