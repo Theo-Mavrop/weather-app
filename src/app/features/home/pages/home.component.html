@@ -3,7 +3,8 @@
     <app-search-bar></app-search-bar>
   </div>
   <div class="home_section result">
-    <span class="home_section_title">......and find Weather Conditions</span>
+    <span *ngIf="!showWeatherResults" class="home_section_title">......and find Weather Conditions</span>
+    <app-weather-result *ngIf="showWeatherResults"></app-weather-result>
   </div>
 </div>
 
