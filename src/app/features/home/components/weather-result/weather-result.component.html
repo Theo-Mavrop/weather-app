@@ -1,7 +1,15 @@
 <div class="weatherResult">
   <div class="weatherResult-header">
+    <div class="weatherResult-icon">
+      <img
+        class="weatherResult-icon-img"
+        [src]="'http://openweathermap.org/img/wn/' + weatherData.weather[0].icon + '@4x.png'">
+    </div>
     <div class="weatherResult-temperature">
-      {{weatherData.main.temp}}
+      {{weatherData.main.temp | number : '1.0-0'}}
+      <span class="weatherResult-temperature-unit">
+        &deg;C
+      </span>
     </div>
   </div>
 </div>

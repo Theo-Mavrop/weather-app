@@ -1,0 +1,23 @@
+.weatherResult {
+  display: flex;
+  flex-direction: column;
+
+  &-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &-temperature {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    font-size: 12rem;
+    font-weight: 700;
+
+    &-unit {
+      font-size: 6rem;
+    }
+  }
+}
